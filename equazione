@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+       
+      int a,b,c;
+      double delta, x1,x2;
+        Scanner write = new Scanner(System.in);
+     
+      System.out.println("inserisci a ");
+      a = write.nextInt();
+      System.out.println("inserisci b ");
+      b = write.nextInt();
+      System.out.println("inserisci c ");
+      c = write.nextInt();
+     
+      delta = (b*b)-4*a*c;
+     
+      x1= -b+Math.sqrt(delta)/(a*2);
+        x2= -b-Math.sqrt(delta)/(a*2);
+       
+        System.out.println("x1 e: "+ x1);
+        System.out.println("x2 e: "+ x2);
+    }
+}
