@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+class PrimeFinder {
+  public static void main(String[] args) {
+    int num, n=1, contatore=0, somma=0;
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.println("Inserisci il numero di primi:");
+    num = scanner.nextInt();
+    while (num <= 0) {
+      System.out.println("Il numero inserito e' negativo o nullo ");
+      num = scanner.nextInt();
+    }
+
+    while (contatore < num) {
+      boolean primo = true;
+      n = n + 1;
+      for (int i = 2; i < n; i++) {
+        if (n % i == 0) {
+          primo = false;
+        }
+      }
+      if (primo == true) {
+        System.out.println(n);
+        contatore++;
+        somma = somma + n;
+      }
+    }
+    System.out.println("La somma e': " + somma);
+  }
+}
