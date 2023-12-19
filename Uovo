@@ -1,0 +1,22 @@
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Partenza");
+        for (int i=1; i<=11; i++){
+            attesa();
+            System.out.println(i +": secondi");
+            switch (i){
+                case 1:System.out.println("uovo iniziale:\n ");break;
+                case 2:System.out.println("uovo a meta: \n");break;
+                case 3:System.out.println("uovo finale \n");break;
+                default:System.out.println("tempo non valido");
+            }
+        }
+    }
+    public static void attesa(){
+        try {
+            Thread.sleep(60000);
+        }catch (InterruptedException e){
+            e.printStackTrace();
+        }
+    }
+}
