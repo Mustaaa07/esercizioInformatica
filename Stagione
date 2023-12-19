@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int  mese;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("inserisci valore mese");
+        mese=sc.nextInt();
+
+            switch (mese){
+                case 1:
+                case 2:
+                case 3:System.out.println("inverno");break;
+                case 4:
+                case 5:
+                case 6:System.out.println("primavera");break;
+                case 7:
+                case 8:
+                case 9:System.out.println("estate");break;
+                case 10:
+                case 11:
+                case 12:System.out.println("Autunno");break;
+
+                default:System.out.println("stagione non valida");
+
+        }
+    }
+    }
