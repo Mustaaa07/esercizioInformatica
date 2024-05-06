@@ -8,7 +8,7 @@ public class Main {
         int dimensione = scanner.nextInt();
         int[] array = new int[dimensione];
         int[] arrayOrdinato = new int[dimensione];
-        int indiceArrayFin = 0; // Cambio il nome della variabile da "l" a "indiceArrayFin"
+        int indiceArrayFin = 0;
         for(int i=0; i<array.length;i++){
             int valore;
             System.out.println("Inserisci un valore nel vettore");
@@ -21,16 +21,16 @@ public class Main {
         for (int i = 0; i < array.length; i++) {
             if(array[i] % 2 == 0 ){
               
-                arrayOrdinato[indiceArrayFin] = array[i]; // Utilizzo "indiceArrayFin" invece di "l"
-                indiceArrayFin = indiceArrayFin + 1; // Utilizzo "indiceArrayFin" invece di "l"
+                arrayOrdinato[indiceArrayFin] = array[i];
+                indiceArrayFin = indiceArrayFin + 1;
                
             }
         }
         for (int i = 0; i < array.length; i++) {
             if(array[i] % 2 == 1 ){
             
-                arrayOrdinato[indiceArrayFin] = array[i]; // Utilizzo "indiceArrayFin" invece di "l"
-                indiceArrayFin = indiceArrayFin + 1; // Utilizzo "indiceArrayFin" invece di "l"
+                arrayOrdinato[indiceArrayFin] = array[i]; 
+                indiceArrayFin = indiceArrayFin + 1; 
             
             }
             
