@@ -1,9 +1,10 @@
 import java.time.LocalTime;
-
+import java.util.Random;
+import static FrontScreen.FrontEnd.*;
 public class Cronometro {
-    private LocalTime startTime;
-    private LocalTime endTime;
+    private int endTime;
     private int tempoGiro;
+    private Random rn;
 
     public Cronometro() {
         setStartTime();
@@ -11,11 +12,12 @@ public class Cronometro {
     }
 
     void setStartTime() {
-        startTime = LocalTime.now();
+        int startTime = 0;
     }
 
     void setEndTime() {
-        endTime = LocalTime.now();
+        rn = new Random();
+        endTime = rn.nextInt(1, 120);
     }
 
     public int getTempoGiro() {
@@ -24,7 +26,7 @@ public class Cronometro {
 
     void calcolaIntTimer() throws Exception {
         int tempo = 0;
-        tempoGiro = this.endTime.toSecondOfDay() - this.startTime.toSecondOfDay();
+        tempoGiro = this.endTime;
         if (tempoGiro == 0)
             throw new Exception("Cronometro stop");
         this.tempoGiro = tempo;

@@ -1,3 +1,4 @@
+import static FrontScreen.FrontEnd.*;
 public class Scuderia implements Comparable<Scuderia> {
     private String nome;
     private Pilota nPilota;

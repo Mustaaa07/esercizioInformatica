@@ -1,5 +1,6 @@
-import java.util.ArrayList;
 
+import java.util.ArrayList;
+import static FrontScreen.FrontEnd.*;
 public class Gara {
 
     private String nome;

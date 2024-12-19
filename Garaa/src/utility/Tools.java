@@ -1,5 +1,6 @@
 package utility;
 import java.util.Scanner;
+import static FrontScreen.FrontEnd.*;
 public class Tools {
     /*public static void main(String[] args) {
 

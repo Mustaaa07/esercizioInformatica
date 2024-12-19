@@ -1,10 +1,11 @@
+import static FrontScreen.FrontEnd.*;
 public class Pilota {
 
     private String nome;
     private String cognome;
     private String nazionalita;
 
-    public Pilota(String nome, String cognome) throws Exception {
+    public Pilota(String nome, String cognome) {
         this.nome = nome;
         this.cognome = cognome;
     }
